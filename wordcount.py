@@ -11,12 +11,23 @@ def word_count():
             all_words.append(word)
             if word not in word_dict:
                 word_dict[word] = 0
-    print word_dict
-    print "    "
-    print all_words
 
+    print "Original Dictionary:"
+    print word_dict    
+    # tests passed:
+    # print word_dict
+    # print "    "
+    # print all_words
+    for word in all_words:
+        if word in word_dict:
+            word_dict[word] += 1
 
-            #d([key] = value
+    print "\nThis is the new dictionary with count:"
+    
+    for word in word_dict:
+        print word, word_dict[word]
+
+    #d([key] = value
 
 
 
